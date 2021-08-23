@@ -150,6 +150,7 @@
 	.searchbar{
 		text-align: center;
 		position: static;
+		transition: 0s;
 	}
 	.searchbar img{
 		position: static;
