@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DC Powers</title>
+	<meta property="og:image" content="img/logo.jpg"/>
+	<meta property="og:type" content="website"/>
+	<meta property="og:url" content="https://nguyend-nam.github.io/DC_Powers/"/>
+	<meta property="og:title" content="DC Powers"/>
+	<meta property="og:description" content="Power rating of DC characters"/>
+	<meta name="theme-color" content="#0476f2">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Cabin" rel="stylesheet">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+	<link rel="icon" type = "image/x-icon" href="img/DC_Comics_logo.png"/>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+	<div class="searchbar" id="searchbar">
+		<a href="https://nguyend-nam.github.io/DC_Powers/"><img src="img/logo.jpg" height=43px></a>
+		<div>
+			<input type="text" id="name" placeholder="Batman, Superman, etc." autocomplete="off">
+			<button onclick="getVal()" id="search"><i class="fas fa-search"></i></button>
+			<span class="links">
+				<a title="Documentation" target="_blank" href="https://superheroapi.com/"><button><i class="far fa-file"></i></button></a>
+				<a title="GitHub" target="_blank" href="https://github.com/NguyenD-Nam/DC_Powers"><button><i class="fab fa-github"></i></button></a>
+			</span>
+		</div>
+	</div>
+	<div class="main">
+		<div class="outp" id="outp"></div>
+	</div>
+	<div class="ftr">
+		<div class="cols">
+			<img src="img/DC_Comics_logo.png" width="100px" height="100px">
+			<div>
+				<span>DC Comics</span>
+				<a target="_blank" href="https://www.dccomics.com/">Official site</a>
+				<a target="_blank" href="https://www.dccomics.com/comics">Comics</a>
+				<a target="_blank" href="https://www.dccomics.com/movies">Movies</a>
+			</div>
+			<div>
+				<span>Documentation</span>
+				<a target="_blank" href="https://superheroapi.com/">API docs</a>
+				<a target="_blank" href="https://superheroapi.com/ids.html">Characters list</a>
+			</div>
+			<div>
+				<span>About this site</span>
+				<a target="_blank" href="https://github.com/NguyenD-Nam/DC_Powers">GitHub</a>
+				<a target="_blank" href="https://nguyend-nam.github.io/">About me</a>
+			</div>
+		</div>
+		<div class="copy">
+			&copy; 2021 Dinh Nam Nguyen - All rights reserved.<br>
+			All characters on this site belong to &copy; 2020 DC Entertainment.
+		</div>
+	</div>
+
+	<script src="app.js"></script>
+</body>
+</html>

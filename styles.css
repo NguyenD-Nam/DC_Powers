@@ -1,0 +1,226 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: 'Cabin';
+	letter-spacing: 1px;
+}
+.searchbar{
+	position: sticky; /* just for hide searchbar effect */
+	top: 0;
+	transition: 0.7s;
+	padding: 20px 15px 20px 15px;
+	background-color: #0476f2;
+	text-align: right;
+	box-shadow: 0 5px 8px #0000003a;
+}
+.searchbar img{
+	position: absolute;
+	left: 0;
+}
+.searchbar input{
+	height: 33px;
+	width: 285px;
+	background: #fff;
+	outline: none;
+	border: none;
+	border-radius: 30px;
+	color: #000;
+	padding: 5px; padding-left: 15px; padding-right: 15px;
+	font-size: 18px;
+	transition: 0.3s;
+}
+.searchbar input:focus{
+	width: 350px;
+}
+#search{
+	box-sizing: border-box;
+	border: 2px solid #fff;
+	background: linear-gradient(120deg, #7a64eb 0%, #64e8de 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+#search:hover{
+	-webkit-text-fill-color: #fff;
+}
+.searchbar button{
+	cursor: pointer;
+	margin: 0 3px 0 3px;
+	background: #fff;
+	background: linear-gradient(120deg, #7a64eb 0%, #64e8de 100%);
+	height: 43px;
+	width: 43px;
+	border: none;
+	border-radius: 50%;
+	outline: none;
+	font-size: 18px;
+	padding: 5px;
+	color: #fff;
+}
+::placeholder{
+	color: #aaa;
+}
+.main{
+	padding: 25px;
+	/*background-color: #fff;*/
+}
+.outp{
+	margin: 0 auto;
+	min-height: 380px;
+	width: 85%;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 12px;
+}
+.card{
+	height: 210px;
+	width: calc(50% - 12px - 10px);
+	border-radius: 15px;
+	box-shadow: 0 4px 8px #0000003a;
+	margin: 10px 10px 10px 10px;
+	display: flex;
+	font-size: 17px;
+}
+.card img{
+	height: 100%;
+	border-radius: 15px 0 0 15px;
+}
+.info{
+	display: flex;
+	flex-direction: column;
+	padding: 12px;
+}
+.info span{
+	margin-top: 4px;
+	margin-bottom: 4px;
+}
+.info .nickname{
+	color: #fff;
+	background: linear-gradient(120deg, #7a64eb 0%, #64e8de 100%);
+	padding: 3px; padding-left: 8px; padding-right: 8px;
+	border-radius: 15px 15px 15px 0px;
+}
+.green{
+	color: #00ff00;
+}
+.cyan{
+	color: #00eebb;
+}
+.yellow{
+	color: #fada00;
+}
+.orange{
+	color: #ee8822;
+}
+.ftr{
+	background-color: #0476f2;
+	padding: 30px;
+}
+.cols{
+	box-sizing: border-box;
+	width: 65%;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+}
+.cols img{
+	background-color: #fff;
+	border-radius: 50%;
+}
+.cols div{
+	display: flex;
+	flex-direction: column;
+}
+.cols div span{
+	color: #fff;
+	margin-bottom: 5px;
+	font-size: 18px;
+}
+.cols div a{
+	text-decoration: none;
+	color: #000;
+	font-size: 15px;
+	margin-top: 2px;
+}
+.copy{
+	text-align: right;
+	padding-right: 35px;
+}
+
+@media (max-width: 1050px){
+	.searchbar{
+		text-align: center;
+		position: static;
+	}
+	.searchbar img{
+		position: static;
+		left: unset;
+	}
+	.searchbar div{
+		margin-top: 15px;
+	}
+	.searchbar input:focus{
+		width: 285px;
+	}
+	.searchbar button, .searchbar a{
+		cursor: default;
+		background-image: none;
+		margin: 0px;
+	}
+	#search{
+		-webkit-background-clip: border-box;
+		-webkit-text-fill-color: #fff;
+		border: none;
+	}
+	.links{
+		position: absolute;
+		right: 10px;
+		top: 18px;
+	}
+	.main{
+		padding: 4px;
+	}
+	.outp{
+		box-sizing: border-box;
+		justify-content: center;
+		width: 100%;
+		min-height: 410px;
+	}
+	.card{
+		width: calc(100% - 12px - 10px);
+		font-size: 15px;
+	}
+	.info{
+		padding: 10px;
+	}
+	.ftr{
+		padding: 30px 15px 35px 15px;
+	}
+	.cols{
+		width: 100%;
+	}
+	.cols *{
+		position: relative;
+		z-index: 2;
+	}
+	.cols img{
+		position: absolute;
+		background-color: #ffffff1e;
+		z-index: 1;
+		height: 129px; width: 129px;
+	}
+	.cols div span{
+		font-size: 16px;
+	}
+	.cols div a{
+		font-size: 14px;
+		cursor: default;
+	}
+	.copy{
+		font-size: 16px;
+		margin-top: 25px;
+		position: relative;
+		z-index: 2;
+		padding: 0;
+		text-align: center;
+	}
+}
