@@ -6,8 +6,6 @@
 }
 .searchbar{
 	position: sticky; /* just for hide searchbar effect */
-	top: 0;
-	transition: 0.7s;
 	padding: 20px 15px 20px 15px;
 	background-color: #0476f2;
 	text-align: right;
@@ -150,7 +148,6 @@
 	.searchbar{
 		text-align: center;
 		position: static;
-		transition: 0s;
 	}
 	.searchbar img{
 		position: static;
@@ -223,5 +220,11 @@
 		z-index: 2;
 		padding: 0;
 		text-align: center;
+	}
+}
+@media (min-width: 1051px){
+	.searchbar{
+		transition: 0.7s;
+		top: 0;
 	}
 }
