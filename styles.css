@@ -96,6 +96,10 @@
 	padding: 3px; padding-left: 8px; padding-right: 8px;
 	border-radius: 15px 15px 15px 0px;
 }
+.info a{
+	color: #0476f2;
+	text-decoration: none;
+}
 .green{
 	color: #00ff00;
 }
@@ -188,6 +192,9 @@
 	}
 	.info{
 		padding: 10px;
+	}
+	.info a{
+		cursor: default;
 	}
 	.ftr{
 		padding: 30px 15px 35px 15px;
