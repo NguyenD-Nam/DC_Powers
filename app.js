@@ -74,7 +74,17 @@ window.onload = function() {
 			else if(data.powerstats.combat > 25 && data.powerstats.combat <= 50)
 				printpreload += 'Combat: <span class="yellow">'+data.powerstats.combat+'</span><br>';
 			else printpreload += 'Combat: <span class="orange">'+data.powerstats.combat+'</span><br>';
-			printpreload += '</div></div>';
+			
+			var more1 = data.name;
+			more1.replace(' ', '-');
+			var img1 = data.image.url;
+			var id11 = img1.search("portraits");
+			var i11 = id11 + 10;
+			var i21 = id11 + 17;
+			var id31 = img1.search(".jpg");
+			var str11 = img1.substring(i11, i11 + 2);
+			var str21 = img1.substring(i21, id31);
+			printpreload += '<a target="_blank" href="' + 'https://www.superherodb.com/' + more1 + '/' + str11 + '-' + str21 +'/history/">More info <i class="fas fa-chevron-circle-right"></i></a></div></div>';
 			document.getElementById('outp').innerHTML = printpreload;
 		});
 	}
@@ -159,7 +169,17 @@ function output(data){
 			else if(data.results[i].powerstats.combat > 25 && data.results[i].powerstats.combat <= 50)
 				print += 'Combat: <span class="yellow">'+data.results[i].powerstats.combat+'</span><br>';
 			else print += 'Combat: <span class="orange">'+data.results[i].powerstats.combat+'</span><br>';
-			print += '</div></div>';
+			
+			var more = data.results[i].name;
+			more.replace(' ', '-');
+			var img = data.results[i].image.url;
+			var id1 = img.search("portraits");
+			var i1 = id1 + 10;
+			var i2 = id1 + 17;
+			var id3 = img.search(".jpg");
+			var str1 = img.substring(i1, i1 + 2);
+			var str2 = img.substring(i2, id3);
+			print += '<a target="_blank" href="' + 'https://www.superherodb.com/' + more + '/' + str1 + '-' + str2 +'/history/">More info <i class="fas fa-chevron-circle-right"></i></a></div></div>';
 		}
 	}
 	document.getElementById('outp').innerHTML = print;
