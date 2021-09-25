@@ -1,6 +1,6 @@
-# <div align="center"><img src="img/DC_Comics_logo.png" width=50px></img></div><div align="center">Powers</div>
+# <div align="center">[<img src="img/DC_Comics_logo.png" width=50px></img></div><div align="center">Powers](https://nguyend-nam.github.io/DC_Powers/)</div>
 
-### **[→ DC Powers](https://nguyend-nam.github.io/DC_Powers/)**
+<!-- ### **[→ DC Powers](https://nguyend-nam.github.io/DC_Powers/)** -->
 
 <br>
 
