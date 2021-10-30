@@ -91,6 +91,9 @@ window.onload = function() {
 }
 
 function output(data){
+	var count = 0;
+	var key = Object.keys(data);
+	if(key[1] != "error") {
 	var size = data.results.length;
 	var print = '';
 	for(let i = size - 1; i >= 0; i--){
@@ -118,7 +121,7 @@ function output(data){
 				|| data.results[i].biography.publisher == "Red Robin"
 				|| data.results[i].biography.publisher == "Red Hood"
 			)
-			&& (data.results[i].id != 124)
+			// && (data.results[i].id != 124)
 		)
 		{
 			print += '<div class="card"><img src='+data.results[i].image.url+'><div class="info"><span class="nickname">'+data.results[i].name+' - '+data.results[i].biography["full-name"]+'</span>';
@@ -180,9 +183,13 @@ function output(data){
 			var str1 = img.substring(i1, i1 + 2);
 			var str2 = img.substring(i2, id3);
 			print += '<a target="_blank" href="' + 'https://www.superherodb.com/' + more + '/' + str1 + '-' + str2 +'/history/">More info <i class="fas fa-chevron-circle-right"></i></a></div></div>';
+			count++;
 		}
+	}}
+	if(count > 0) document.getElementById('outp').innerHTML = print;
+	else {
+		document.getElementById('outp').innerHTML = `<div class="card"><img src="https://i.pinimg.com/564x/5e/4f/d0/5e4fd0f9900e8a60c06b0dc86bc1a128.jpg"><div class = "info"><span class="nickname">Hmm... My computer doesn't recognize it</span><span>I scared a lot of people! But this time you scare me &#129300;</span><span>Maybe you should... &#128530; glance over the <a href="https://superheroapi.com/ids.html" target="_blank">character list</a> here &#128517;</span></div></div>`;
 	}
-	document.getElementById('outp').innerHTML = print;
 }
 
 
