@@ -188,7 +188,7 @@ function output(data){
 	}}
 	if(count > 0) document.getElementById('outp').innerHTML = print;
 	else {
-		document.getElementById('outp').innerHTML = `<div class="card"><img src="https://i.pinimg.com/564x/5e/4f/d0/5e4fd0f9900e8a60c06b0dc86bc1a128.jpg"><div class = "info"><span class="nickname">Hmm... My computer doesn't recognize it</span><span>I scared a lot of people! But this time you scare me &#129300;</span><span>Maybe you should... &#128530; glance over the <a href="https://superheroapi.com/ids.html" target="_blank">character list</a> here &#128517;</span></div></div>`;
+		document.getElementById('outp').innerHTML = `<div class="card"><img src="https://i.pinimg.com/564x/5e/4f/d0/5e4fd0f9900e8a60c06b0dc86bc1a128.jpg"><div class = "info"><span class="nickname">Hmm... My computer doesn't recognize it</span><span>I scared a lot of people! But this time you scare me &#129300;</span><span>Maybe you should... &#128530; glance over the <a href="https://superheroapi.com/ids.html" target="_blank">characters list</a> here &#128517;</span></div></div>`;
 	}
 }
 
