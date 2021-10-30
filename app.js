@@ -18,7 +18,7 @@ function getData( charname ) {
 }
 
 window.onload = function() {
-	var preloadchar = [70, 644, 720, 546, 542];
+	var preloadchar = [70, 644, 720, 266, 730];
 	var key1 = '3119940428329048';
 	var printpreload = '<div style="width: 80%; text-align: center; font-size: 16px; margin:0 auto 4px; color: #888;">Use search box to find more DC Comics characters</div>';
 	for(let i = 0; i < 5; i++){
